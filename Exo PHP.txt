@@ -1,0 +1,24 @@
+<?php
+
+// Génère un mot de passe aléatoire de 8 caractères
+function generatePassword() {
+  $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  $password = '';
+  for ($i = 0; $i < 8; $i++) {
+    $password .= $chars[rand(0, strlen($chars) - 1)];
+  }
+  return $password;
+}
+
+// Génère et affiche un nouveau mot de passe
+$password = generatePassword();
+echo $password;
+
+----Ce script définit une fonction generatePassword qui génère un mot de passe aléatoire en utilisant la fonction rand pour sélectionner aléatoirement des caractères dans une chaîne de caractères prédéfinie.
+ La fonction retourne le mot de passe généré.
+
+Le script appelle ensuite la fonction generatePassword et affiche le mot de passe généré à l'aide de la commande echo. 
+Vous pouvez appeler la fonction autant de fois que vous le souhaitez pour générer de nouveaux mots de passe.
+
+
+

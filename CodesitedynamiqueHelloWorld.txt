@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .greeting {
+        font-size: 32px;
+      }
+      .input {
+        margin: 16px 0;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="greeting">Hello, World!</div>
+      <input class="input" type="text" placeholder="Enter your name" />
+      <button class="button">Submit</button>
+    </div>
+    <script>
+      const inputEl = document.querySelector('.input');
+      const buttonEl = document.querySelector('.button');
+      const greetingEl = document.querySelector('.greeting');
+
+      buttonEl.addEventListener('click', () => {
+        greetingEl.innerHTML = 'Hello, ' + inputEl.value + '!';
+      });
+    </script>
+  </body>
+</html>
+
+--------Voici un exemple de code HTML et JavaScript pour créer une page web dynamique:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .greeting {
+        font-size: 32px;
+      }
+      .input {
+        margin: 16px 0;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="greeting">Hello, World!</div>
+      <input class="input" type="text" placeholder="Enter your name" />
+      <button class="button">Submit</button>
+    </div>
+    <script>
+      const inputEl = document.querySelector('.input');
+      const buttonEl = document.querySelector('.button');
+      const greetingEl = document.querySelector('.greeting');
+
+      buttonEl.addEventListener('click', () => {
+        greetingEl.innerHTML = 'Hello, ' + inputEl.value + '!';
+      });
+    </script>
+  </body>
+</html>
+
+Ce code crée une page web avec un champ de saisie et un bouton. Lorsque l'utilisateur saisit son nom dans le champ de saisie et clique sur le bouton, 
+le message de bienvenue est mis à jour pour afficher le nom de l'utilisateur.
+
+Le code JavaScript utilise les méthodes querySelector et addEventListener pour sélectionner les éléments HTML et ajouter un gestionnaire d'événements qui exécute une fonction lorsque le bouton est cliqué.
+ La fonction met à jour le contenu de l'élément de salutation en utilisant la propriété innerHTML.
