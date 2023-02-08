@@ -7,9 +7,8 @@
 .container {
     width: 100%;
     height: 100vh;
-    /*background: #E08F8F;*/
-    background: rgb(224,143,143);
-    background: linear-gradient(180deg, rgba(224,143,143,1) 0%, rgba(126,107,143,1) 35%, rgba(126,107,143,1) 65%, rgba(224,143,143,1) 100%); 
+    background: rgb(220,142,143);
+    background: linear-gradient(0deg, rgba(220,142,143,1) 5%, rgba(126,107,143,1) 50%, rgba(224,143,143,1) 95%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +39,7 @@
 }
 
 .description{
-    background-color: rgba(252, 250, 250, 0);
+    /*background-color: rgba(252, 250, 250, 0);*/
     position: absolute;
     bottom: 50px;
     width: 100%;
@@ -49,10 +48,10 @@
     justify-content: center;
     padding: 2rem;
     font-family: 'Great Vibes', cursive;
-    font-size: 40px;
-   
+    font-size: 47.5px;
+    background-color: #ffffff54;
 }
 h4{
     opacity: 1;
-    color: rgb(250, 255, 255);
+    color: rgb(63, 26, 151);
 }

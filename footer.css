@@ -19,7 +19,7 @@ a{
     min-width: fit-content;
     width: fit-content;
     width: -webkit-fit-content;
-    width: -moz-fit-content;
+    /*width: -moz-fit-content;*/
 }
 
 a, button{
@@ -69,7 +69,8 @@ fieldset{
 }
 
 .padding_4x{
-    padding:4rem;
+    padding:1rem
+    
 }
 
 .btn{
@@ -130,7 +131,7 @@ footer{
     /*background-color: #7E6B8F;*/
     background: rgb(126,107,143);
     background: linear-gradient(0deg, rgba(126,107,143,1) 0%, rgba(224,143,143,1) 70%);
-    margin-top: 25px;
+    
 }
 
 footer h3{

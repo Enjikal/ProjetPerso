@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Great+Vibes&family=Lobster+Two&family=Poppins&family=Satisfy&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet"> 
+
     <title>Projet perso</title>
     </head>
     <body>
@@ -21,7 +25,7 @@
                   <li><a href="compte\indexc.html" onclick="toggleMenu();">Thématique</a></li>
                   <li><a href="panier\panier.html" onclick="toggleMenu();">Contact</a></li>
                   <li><a href="contact\contact.html" onclick="toggleMenu();">Boutique</a></li>
-                  <li><a href="apropos\apropos.html" onclick="toggleMenu();">A propos</a></li>
+                 
                   <a href="reservation\reserv.html" class="btn-reserve" onclick="toggleMenu();">Se connecter</a>
               </ul>
     </header>
