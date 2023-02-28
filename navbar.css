@@ -16,7 +16,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 15px 25px;
+  padding: 20px 30px;
   background: linear-gradient(180deg, rgba(126,107,143,1) 0%, rgba(224,143,143,1) 100%, rgba(0,212,255,1) 100%);
   box-shadow: inset 0px -3px 5px #706f6f;
 }
@@ -42,14 +42,16 @@ nav {
 .hamburger {
   display: none;
 }
-.navlinks-container a {
-  margin: 0 50px;
+.navlinks-container a,
+.navlinks-container {
+  margin: 0 40px;
   font-size: 17px;
   font-weight: 500;
   text-decoration: none;
   color: #414141;
   display: inline-block;
   position: relative;
+  
 }
 .navlinks-container a::after {
   content: "";
@@ -63,6 +65,7 @@ nav {
   background: #333;
   transition: transform 0.2s ease-out;
 }
+
 
 .navlinks-container a:hover::after {
   transform: scaleX(1)
@@ -78,16 +81,23 @@ nav {
   min-width: 90px;
   padding: 10px 5px;
   margin: 0 5px;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  border: none; 
+  border-bottom: 3px solid #414141;
+  transition: all .1s;
+  -webkit-transition: all .1s; 
 }
 
-.sign-btns button:nth-child(2) {
-  border: none;
-  background: #04cde1b8;
- 
+.sign-btns button:active {
+  transform: translate(0, 5px);
+  -webkit-transform: translate(0, 5px);
+  border-bottom: 1px solid;
 }
+.sign-btns button:nth-child(2) {
+  background: #04cde1b8;
+ }
+
 .sign-user {
   display: none;
 }
