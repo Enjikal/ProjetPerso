@@ -4,22 +4,22 @@
     --dark:#1E1E1E;
     --gray:rgba(1,1,1,0.6);
     --lite:rgba(255,255,255,0.6);
-    --primary:#002347;
-    --secondary:#fdc632;
+    --primary:aliceblue;
+    --secondary:#c236d4;
 }
 
-body{
+/*body{
     margin:0;
-    /* overflow-x:hidden !important; */
+    /*overflow-x:hidden !important; 
     font-family: 'Poppins', sans-serif;
-}
+}*/
 
 a{
     text-decoration:none !important;
     min-width: fit-content;
     width: fit-content;
     width: -webkit-fit-content;
-    /*width: -moz-fit-content;*/
+    width: -moz-fit-content;
 }
 
 a, button{
@@ -28,9 +28,10 @@ a, button{
 
 a, p{
     font-size:14px;
+    color: var(--lite);
 }
 
-h1, h2, h3, h4, h5, h6{
+h1{
     color:var(--primary);
     font-weight:600;
 }
@@ -39,21 +40,24 @@ a, button, input, textarea, select{
     outline:none !important;
 }
 
-fieldset{
-    border:0;
+.fixed_flex{
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
 }
 
+.fixed_flex input{
+    width: 60%;
+    border-radius: 10px;
+}
 .title{
     color:var(--primary);
 }
 
-.flex, .fixed_flex{
+.flex, .fixed_flex:nth-child(2){
     display:flex;
-}
-
-.flex-content{
-    width:100%;
-    position:relative;
+    justify-content: space-between;
+    margin: -5px 20px;
 }
 
 .padding_1x{
@@ -69,13 +73,14 @@ fieldset{
 }
 
 .padding_4x{
-    padding:1rem
-    
+    padding:1rem;
+    height: 30%;
+    padding-top: 0.5rem;
 }
 
 .btn{
     padding:0.8rem 2rem;
-    border-radius:5px;
+    border-radius:2px;
     text-align:center;
     font-weight:500;
     text-transform:uppercase;
@@ -94,12 +99,14 @@ fieldset{
 
 .btn_2{
     border:1px solid var(--secondary);
-    background-color:#f7dcdc;
+    background-color:#a927f5;
     color:var(--primary);
+    cursor: pointer;
+    border-radius: 20px;
 }
 
 .btn_2:hover{
-    border:1px solid var(--primary);
+    border:2px solid var(--primary);
     background-color:var(--primary);
     color:var(--secondary);
 }
@@ -139,7 +146,7 @@ footer h3{
     margin-bottom:1.5rem;
 }
 
-footer a{
+footer a, p{
     color:var(--lite);
     display:block;
     margin:15px 0;
@@ -151,17 +158,18 @@ footer a:hover{
 
 footer fieldset{
     padding:0;
+    
 }
 
 footer fieldset input{
     background-color:#4E3565;
-    border:0;
+    border-radius: 10px;
     color:var(--lite);
     padding:1rem;
 }
 
 footer fieldset .btn{
-    border-radius:0;
+    border-radius:25px;
     border:0;
 }
 
@@ -191,6 +199,7 @@ footer .flex:last-child a{
     padding:0.5rem;
     margin-right:3px;
     text-align:center;
+    border-radius: 20px;
 }
 
 footer .flex:last-child a:hover{

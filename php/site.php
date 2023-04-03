@@ -1,4 +1,7 @@
 <?php
+session_start();
+$page= "slider";
+
  include "header.php";
 
 ?>
@@ -101,6 +104,7 @@
 
 
 
-<?php 
+<?php
+ 
 include 'footer.php';
 ?>
